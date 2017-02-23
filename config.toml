@@ -1,0 +1,27 @@
+baseurl = "http://keanenguyen.com/"
+theme = "cocoa-eh"
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Keane Nguyen"
+title = "Keane Nguyen"
+pluralizelisttitles = false
+
+[permalinks]
+blog = "blog/:slug/"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "Keane Nguyen's personal website"
+logofile = "img/logo.png"
+faviconfile = "img/logo.png"
+highlightjs = true
+progressively = true
+latestpostcount = 5
+lang = "en"
+github = "keanemind"
+email = "you@example.com"
+social_banner = "img/banner.png"
