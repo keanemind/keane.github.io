@@ -20,6 +20,11 @@ build:
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
   steps:
+    - script:
+        name: echo "downloading theme"
+        code: |
+            $(git clone https://github.com/keanemind/cocoa-eh-hugo-theme.git ./themes/cocoa-eh)
+
     - arjen/hugo-build:
         version: "0.18.1"
         theme: cocoa-eh
