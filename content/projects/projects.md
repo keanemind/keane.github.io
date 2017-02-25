@@ -3,4 +3,4 @@ date = "2015-08-19T20:29:37-07:00"
 title = "Projects"
 +++
 
-I don't have any projects to show off yet...
+I don't have any projects to show off yet... (other than this website)
