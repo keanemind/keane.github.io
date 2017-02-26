@@ -23,14 +23,14 @@ build:
     - install-packages:
         packages: git
     - script:
-        name: echo "downloading theme"
+        name: download theme
         code: |
             $(git clone https://github.com/keanemind/cocoa-eh-hugo-theme.git ./themes/cocoa-eh)
-
     - arjen/hugo-build:
         version: "0.18.1"
         theme: cocoa-eh
         disable_pygments: true
+
 deploy:
   steps:
     - install-packages:

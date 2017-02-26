@@ -1,6 +1,7 @@
 +++
 date = "2017-02-22T19:48:30-06:00"
-title = "Objective Update 1"
+title = "Objective update 1"
+Best = true
 +++
 
 The way this is going to work is that I'm going to keep a status update on this blog about what my current short-term objectives are. 
