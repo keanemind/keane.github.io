@@ -2,7 +2,6 @@
 date = "2017-02-26T10:15:37-06:00"
 title = "Automated deployment"
 Best = true
-draft = true
 +++
 
 On Friday, I spent a few hours of trial and error setting up automated deployment for this website. Automated deployment allows me to update my site more easily. First, I push changes to my website's source files to a source branch on my Github pages repository. Then, a Wercker application I set up builds my website from the files in the source branch. Finally, Wercker pushes the built website files to my master branch and the changes can be seen on the actual website. In this post, I'm going to journal what I did to set this up. 
