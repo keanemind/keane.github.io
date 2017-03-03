@@ -13,8 +13,12 @@ Here are some things about this theme that I am currently unsatisfied with:
 
 1\. The way the website's header shifts up and down when viewed from a desktop computer, depending on what page visitors are viewing. 
 
-2\. The website is a too minimalistic. 
+2\. The website is a bit too minimalistic. 
 
 3\. It seems that this theme does not support numbered lists, only bulleted lists. Typing "1." creates a bullet. 
 
-I will deal with these shortcomings in time. 
+4\. I'm pretty sure now that the header shifts left and right a little too. 
+
+5\. I don't want the copyright text at the bottom of the site to be a link. Removing the \<a> tag caused its formatting to be different though, and I don't know why.
+
+I will deal with all these shortcomings eventually. 
