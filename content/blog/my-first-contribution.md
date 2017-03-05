@@ -3,6 +3,8 @@ date = "2017-03-03T00:18:22-06:00"
 title = "My First Open Source Contribution"
 +++
 
+![image](/img/gitmerge.png)
+
 I felt so cool when I first started using Github to manage my little Python scripts a month ago. I felt like a pro; I was using the same system that countless other programmers use daily to build well-known projects. I felt potential: would my Github profile one day be full of awesomeness? 
 
 It seems like everyone says to start off by contributing to a project on Github. It's pretty intimidating though! All of the code I see on Github is way over my head. And what if I make a mistake? But I found a way to start small as I set up this website. The Hugo documentation is pretty disorganized, and it was a struggle for me to understand what was going on when I first used Hugo. The documentation for this site's theme, Cocoa-EH, is also very lacking. I occurred to me that Hugo really could use my help in improving its docs. 

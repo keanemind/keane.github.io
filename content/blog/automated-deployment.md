@@ -4,6 +4,8 @@ title = "Automated deployment"
 Best = true
 +++
 
+![image](/img/cogs.png)
+
 On Friday, I spent a few hours of trial and error setting up automated deployment for this website. Automated deployment allows me to update my site more easily. First, I push changes to my website's source files to a source branch on my Github pages repository. Then, a Wercker application I set up builds my website from the files in the source branch. Finally, Wercker pushes the built website files to my master branch and the changes can be seen on the actual website. In this post, I'm going to journal what I did to set this up. 
 
 I initially got the idea for the whole setup from [Peter Chuang's blog](https://novelist.xyz/tech/hugo-site-deployment-workflow/) (his blog is also the reason I'm using Hugo to create this website instead of Jekyll). I liked the idea of being able to track changes to my website source files on Github while using Github pages. However, I didn't like having to make changes to my source, push the changes to my source branch, build the website, and then push the new website to my master branch. Peter linked to [another blogger (Roman Coedo)](http://rcoedo.com/post/hugo-static-site-generator/) whose instructions he followed. Roman used Travis CI to automatically build and deploy his website to Github pages. I read his post, and his instructions required me to install Ruby. I didn't feel like doing that, so I looked for another guide elsewhere.

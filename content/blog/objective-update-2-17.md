@@ -4,6 +4,8 @@ title = "Objective update 1"
 Best = true
 +++
 
+![image](/img/todolist.png)
+
 The way this is going to work is that I'm going to keep a status update on this blog about what my current short-term objectives are. 
 
 I have two objectives for the next few months:
