@@ -1,7 +1,6 @@
 +++
 title = "Hello world!"
 date = "2017-02-22T17:39:42-06:00"
-Best = true
 +++
 
 ![image](/img/globe.png)
