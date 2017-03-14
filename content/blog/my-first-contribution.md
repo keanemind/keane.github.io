@@ -1,6 +1,6 @@
 +++
 date = "2017-03-03T00:18:22-06:00"
-title = "My First Open Source Contribution"
+title = "My first open source contribution"
 +++
 
 ![image](/img/gitmerge.png)
