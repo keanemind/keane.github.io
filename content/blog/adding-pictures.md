@@ -1,8 +1,6 @@
 +++
 date = "2017-03-14T01:51:35-05:00"
 title = "Adding pictures"
-draft = true
-
 +++
 
 ![image](/img/pictureicon.png)
