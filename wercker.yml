@@ -27,7 +27,7 @@ build:
         code: |
             $(git clone https://github.com/keanemind/cocoa-eh-hugo-theme.git ./themes/cocoa-eh)
     - arjen/hugo-build:
-        version: "0.18.1"
+        version: "0.25.1"
         theme: cocoa-eh
         disable_pygments: true
 
