@@ -1,7 +1,6 @@
 +++
 date = "2017-02-22T19:48:30-06:00"
 title = "Objective update 1"
-Best = true
 +++
 
 ![image](/img/todolist.png)
