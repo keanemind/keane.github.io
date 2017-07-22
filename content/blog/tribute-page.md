@@ -19,12 +19,12 @@ The last challenge I faced was getting the image to be the right size on differe
 
 What I wanted was for the picture to fill the entire width of my phone's screen, but not fill nearly as much on my desktop's screen. In the end, using the Bootstrap grid was the solution yet again. Bootstrap's dynamic grid divides the width of the user's screen into 12 equal-width columns. I had the image take up all 12 columns on extra small (phone) screens, 10 columns (with an offset of 1 to center the image) on small (tablet) screens, 8 columns (with an offset of 2) on medium (desktop) screens, and 6 columns (with an offset of 3) on large screens.
 
-After hours of scrutinizing the page, finding flaws in it, and making corrections, I decided that enough was enough and considered it complete. Here's the link to the CodePen that I made it in: https://codepen.io/keanemind/details/mwNGQj/
+After hours of scrutinizing the page, finding flaws in it, and making corrections, I decided that enough was enough and considered it complete. [Here's the CodePen I made it in.](https://codepen.io/keanemind/details/mwNGQj/)
 
-Here is the website on my desktop screen:
+This is the website on my desktop screen:
 
 ![image](/img/BenningtonTribute.jpg)
 
-And here is what the website would look like on a phone screen:
+And this is what the website would look like on a phone screen:
 
 ![image](/img/BenningtonTributeMobile.jpg)
