@@ -8,9 +8,9 @@ Best = true
 
 Well. It really has been a long time since I last posted on my blog. It's been so long that my [About Me](/about) page is out of date! Let me explain what happened. 
 
-I stopped posting because finals were approaching and I dropped everything to focus on school. After I graduated, I forgot all about the blog. I was already feverishly working on my latest project: a Discord bot for my Discord server!
+I stopped posting because finals were approaching and I dropped everything to focus on school. After I graduated, I forgot all about the blog. I was already feverishly working on my latest project: a [Discord](https://discordapp.com/) bot for my Discord server!
 
-You see, I run a Discord server called Pirate Ship for my friends and their friends to use when we're gaming. When summer started, I set up a bot called [Red Bot](https://github.com/Twentysix26/Red-DiscordBot) on a Digital Ocean droplet. On my server, the bot is named Parrot. What I've been doing all summer is coding [a module for him](https://github.com/keanemind/Keane-Cogs). 
+You see, I run a Discord server called Pirate Ship for my friends and their friends to use when we're gaming. When summer started, I set up a bot called [Red](https://github.com/Twentysix26/Red-DiscordBot) on a [Digital Ocean](https://www.digitalocean.com/) droplet. On my server, the bot is named Parrot. What I've been doing all summer is coding [a module for him](https://github.com/keanemind/Keane-Cogs). 
 
 I've created a command that allows people to "!feed" him at the expense of credits, a virtual currency tracked by the bot. Feeding Parrot gives users a chance to be chosen by Parrot as his perch. Whoever Parrot perches on gets special commands and abilities for the games that you can play through Parrot bot. 
 
