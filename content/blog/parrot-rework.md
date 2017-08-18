@@ -1,6 +1,6 @@
 +++
 date = "2017-08-03T18:10:17-05:00"
-title = "Parrot Rework"
+title = "Parrot rework"
 +++
 
 In my [I'm Back](/blog/im-back/) post, I mentioned that I have been working on a [Discord](https://discordapp.com/) chatbot called Parrot all summer. This morning, I finished the second version of a cog I made exclusively for Parrot, which you can find in [my Keane-Cogs repository](https://github.com/keanemind/Keane-Cogs). I named the cog after him, and for the rest of this post I will consider the bot and the cog the same thing.

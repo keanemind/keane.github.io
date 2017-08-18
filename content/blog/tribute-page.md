@@ -1,6 +1,6 @@
 +++
 date = 2017-07-21T17:59:29-05:00
-title = "Tribute Page"
+title = "Tribute page"
 +++
 
 ![image](/img/bootstrap.jpg)
