@@ -1,0 +1,14 @@
+---
+title: "The State of Pirate Ship"
+date: 2017-10-01T21:12:27-05:00
+---
+
+Yet again, I've failed to update this blog for a long period of time. I really need to develop writing into a habit somehow. Anyway, I'm in Austin now, studying electrical and computer engineering at the University of Texas at Austin. Today I'm going to write about the state of the Discord server my bot Parrot resides in.
+
+The server, called Pirate Ship, is basically a dead chatroom. Despite having 72 members, only about ten messages are sent per day across all channels. Over the summer, Pirate Ship was mainly used only for voice chat, and the text channels were mostly ignored by users. I created Parrot to encourage members to use the chat more, for interacting with the bot and each other. But now, the low activity levels over the summer have now flatlined to essentially no activity whatsoever. The server's voice channels were almost always used for gaming comms. Now that school is back in session, even those are rarely used anymore.
+
+I think it's worth noting that the ten or so messages that are sent every day are sent by a few members who use the `!payday` command to collect their daily credit allowance. It's either that, or they're using `!feed` to keep Parrot alive and get a credit reward at the end of the day. It seems that members like to hoard credits to climb on the credits leaderboard. What surprises me is that nobody is using the `!steal` command as a means to rise through the ranks. I had hoped that the Steal module would instigate a credit theft war between the users that actually cared about the number of credits they had. However, the three people who tried out the command stopped using it after a week. 
+
+Why didn't the `!steal` command catch on with members? One reason might be that few members know about it. I tried telling people about the command through announcements, but only a tiny fraction of the server's members have ever used it. Perhaps I need to advertise it more aggressively and promote it as the best way to earn credits. Another reason could be the complexity of the command. There are different matchups between each pair of upgrade paths. The documentation is a lengthy read for the user who wants to understand how stealing works. Finally, there's also the possibility that the pirates of Pirate Ship are too nice, and don't want to steal from each other. 
+
+Whatever the reason is, the Steal cog has not been nearly as successful as I had hoped. It seems I have failed to design a game and user experience that suits my target audience. For now, it's back to brainstorming new modules in hopes of reviving Pirate Ship. This time, I might try building something that's not based on the credits system, because some users might not feel that accumulating credits is rewarding or engaging.
