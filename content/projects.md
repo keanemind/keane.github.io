@@ -5,15 +5,15 @@ title = "Projects"
 
 This page is under construction.
 
----  
+---
 
 ### Blog
 This website was created using Hugo and the Cocoa-EH theme.  
-https://github.com/keanemind/keanemind.github.io  
-https://github.com/keanemind/cocoa-eh-hugo-theme  
+[GitHub repo for blog](https://github.com/keanemind/keanemind.github.io)  
+[GitHub repo for theme](https://github.com/keanemind/cocoa-eh-hugo-theme)
 
----  
+---
 
 ### Keane Cogs
 Modules for a Discord bot hosted on my private Discord server, Pirate Ship.  
-https://github.com/keanemind/Keane-Cogs  
+[GitHub repo](https://github.com/keanemind/Keane-Cogs)  
