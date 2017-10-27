@@ -14,7 +14,7 @@ The assignment was to make connections so that the combination of the two muxes 
 What a solution would look like:
 ![image](/img/two_mux_solution.jpg)
 
-In a follow-up email to the class, Dr. Patt taunted us: "You could spend hours looking at the two muxes and not figure it out," he wrote. Not ones to back down from a challenge, we had spent the entire morning thinking the problem over. It was now late in the afternoon., and I had no idea how to even approach the problem anymore. What was the logical way to think about it? What is the meaning of XOR, and what does a MUX truly do? My mind blanked. It didn't even feel tired anymore; it felt numb.
+In a follow-up email to the class, Dr. Patt taunted us: "You could spend hours looking at the two muxes and not figure it out," he wrote. Not ones to back down from a challenge, we had spent the entire morning thinking the problem over. It was now late in the afternoon, and I had no idea how to even approach the problem anymore. What was the logical way to think about it? What is the meaning of XOR, and what does a MUX truly do? My mind blanked. It didn't even feel tired anymore; it felt numb.
 
 "What would you guys like to drink?"
 
