@@ -3,7 +3,7 @@ title = "EE 306 Problem Set 2"
 date = 2017-10-26T16:56:32-05:00
 +++
 
-"Implement F = A xor B using only two 2-to-1 muxes," Andy muttered. Andy, Bala, and I had just sat down in Thai, How Are You?, a restaurant on the Drag. Our menus were on the table, but we were looking down at our notebook journals, more concerned with ordering mux inputs than food. Andy's words echoed in my mind. Labeled 5b, they were typed up in Problem Set 2 of our EE306 class. The challenge, just a few words long, sounded tantalizingly simple. We merely had to wire together two muxes in such a way that the combination outputted the XOR of the inputs. 
+"Implement F = A xor B using only two 2-to-1 muxes," Andy muttered. Andy, Bala, and I had just sat down in Thai, How Are You?, a restaurant on the Drag. Our menus were on the table, but we were looking down at our notebook journals, more concerned with ordering mux inputs than food. Andy's words echoed in my mind. Labeled 5b, the words were typed up in Problem Set 2 of our EE306 class. The challenge, just a few words long, sounded tantalizingly simple. We merely had to wire together two muxes in such a way that the combination outputted the XOR of the inputs. 
 
 A mux:
 ![image](/img/mux.jpg)
