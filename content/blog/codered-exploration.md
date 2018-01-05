@@ -49,7 +49,7 @@ I suggested that we walk to the student union, where my high school teammates an
 
 ![image](/img/bala-leon-max-uh.jpg)
 
-## Nov. 5, 2017 - 1:00 AM - So Close, Yet So Far
+## Nov. 5, 2017 1:00 AM - So Close, Yet So Far
 We took turns playing energetic hip-hop music when we got back to our tiny room. Max and Bala worked on formatting the complicated JSONs that the Google People API was giving us while I started reading SQL docs to help Leon. There was something wrong with the SQL commands that Leon's code was sending to his database. Reading up about SQL syntax didn't help except to verify that his commands were already syntactically correct. There must have been a mistake with his table names, or some related oversight. Whatever it was, I realized that I was of little help to Leon. I got out my blanket and laid down on the floor. Max and Bala, having successfully printed the user's contacts on the terminal, laid down as well. I soon drifted off.
 
 My alarm woke me up four hours later, at 8:00. Leon and Bala were awake, staring at their laptops. I'm not sure if Leon slept at all. He greeted me and told me that the database was operational. Too tired to celebrate, I weakly congratulated him.
