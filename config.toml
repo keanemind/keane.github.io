@@ -1,4 +1,4 @@
-baseurl = "http://keanenguyen.com/"
+baseurl = "https://www.keanenguyen.com/"
 theme = "cocoa-eh"
 canonifyurls = true
 contentdir = "content"
