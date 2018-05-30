@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Keane Nguyen</title>
+    <link>https://keanemind.github.io/blog/</link>
+    <description>Recent content in Blog on Keane Nguyen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright 2018 Keane Nguyen</copyright>
+    <lastBuildDate>Thu, 04 Jan 2018 22:39:50 -0600</lastBuildDate>
+    
+	<atom:link href="https://keanemind.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CodeRED Exploration</title>
+      <link>https://keanemind.github.io/blog/codered-exploration/</link>
+      <pubDate>Thu, 04 Jan 2018 22:39:50 -0600</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/codered-exploration/</guid>
+      <description>Nov. 4, 2017 5:00 AM - En Route Two months ago, I hopped on a charter bus at 5:00 in the morning and headed for Houston. Busy writing and debugging my LC3 programming assignment on my laptop, I didn&amp;rsquo;t even realize at first when we arrived at the University of Houston campus. When I finally looked around just as we were pulling to a stop, I recognized some of the faintly familiar buildings.</description>
+    </item>
+    
+    <item>
+      <title>EE 306 Problem Set 2</title>
+      <link>https://keanemind.github.io/blog/ee-306-problem-set-2/</link>
+      <pubDate>Thu, 26 Oct 2017 16:56:32 -0500</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/ee-306-problem-set-2/</guid>
+      <description>&amp;ldquo;Implement F = A xor B using only two 2-to-1 muxes,&amp;rdquo; Andy muttered. Andy, Bala, and I had just sat down in Thai, How Are You?, a restaurant on the Drag. Our menus were on the table, but we were looking down at our notebook journals, more concerned with ordering mux inputs than food. Andy&amp;rsquo;s voice echoed in my mind. Labeled 5b, the words at the beginning of this paragraph were typed up in Problem Set 2 of our EE306 class.</description>
+    </item>
+    
+    <item>
+      <title>The State of Pirate Ship</title>
+      <link>https://keanemind.github.io/blog/the-state-of-pirate-ship/</link>
+      <pubDate>Sun, 01 Oct 2017 21:12:27 -0500</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/the-state-of-pirate-ship/</guid>
+      <description>Yet again, I&amp;rsquo;ve failed to update this blog for a long period of time. I really need to develop writing into a habit somehow. Anyway, I&amp;rsquo;m in Austin now, studying electrical and computer engineering at the University of Texas at Austin. Today I&amp;rsquo;m going to write about the state of the Discord server my bot Parrot resides in.
+The server, called Pirate Ship, is basically a dead chatroom. Despite having 72 members, only about ten messages are sent per day across all channels.</description>
+    </item>
+    
+    <item>
+      <title>Parrot rework</title>
+      <link>https://keanemind.github.io/blog/parrot-rework/</link>
+      <pubDate>Thu, 03 Aug 2017 18:10:17 -0500</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/parrot-rework/</guid>
+      <description>In my I&amp;rsquo;m Back post, I mentioned that I have been working on a Discord chatbot called Parrot all summer. This morning, I finished the second version of a cog I made exclusively for Parrot, which you can find in my Keane-Cogs repository. I named the cog after him, and for the rest of this post I will consider the bot and the cog the same thing.
+The reworked, second version of Parrot was necessary because the way I originally coded him was becoming an annoyance.</description>
+    </item>
+    
+    <item>
+      <title>Tribute page</title>
+      <link>https://keanemind.github.io/blog/tribute-page/</link>
+      <pubDate>Fri, 21 Jul 2017 17:59:29 -0500</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/tribute-page/</guid>
+      <description>Yesterday, I was working on Free Code Camp challenges when I reached the first project challenge of the course: build a dynamic tribute page using Bootstrap. I decided then that I wouldn&amp;rsquo;t start it until the next day. When a few hours later I read breaking news that Chester Bennington had committed suicide, I changed my mind immediately.
+Chester was Linkin Park&amp;rsquo;s lead singer, and Linkin Park was my favorite band growing up.</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m back!</title>
+      <link>https://keanemind.github.io/blog/im-back/</link>
+      <pubDate>Wed, 19 Jul 2017 23:37:03 -0500</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/im-back/</guid>
+      <description>Well. It really has been a long time since I last posted on my blog. It&amp;rsquo;s been so long that my About Me page is out of date! Let me explain what happened.
+I stopped posting because finals were approaching and I dropped everything to focus on school. After I graduated, I forgot all about the blog. I was already feverishly working on my latest project: a Discord bot for my Discord server!</description>
+    </item>
+    
+    <item>
+      <title>Adding pictures</title>
+      <link>https://keanemind.github.io/blog/adding-pictures/</link>
+      <pubDate>Tue, 14 Mar 2017 01:51:35 -0500</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/adding-pictures/</guid>
+      <description>Last week I was reading a blog post on how to make good blog posts. One of the suggestions stuck out at me:
+ Include images. While readers come to your blog for information and personality, they also need to be stimulated visually. Not all posts will lend themselves to an image, but when they do, take advantage of it.
+ I had been thinking that this website was too plain for a while.</description>
+    </item>
+    
+    <item>
+      <title>My first open source contribution</title>
+      <link>https://keanemind.github.io/blog/my-first-open-source-contribution/</link>
+      <pubDate>Fri, 03 Mar 2017 00:18:22 -0600</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/my-first-open-source-contribution/</guid>
+      <description>I felt so cool when I first started using Github to manage my little Python scripts a month ago. I felt like a pro; I was using the same system that countless other programmers use daily to build well-known projects. I felt potential: would my Github profile one day be full of awesomeness?
+It seems like everyone says to start off by contributing to a project on Github. It&amp;rsquo;s pretty intimidating though!</description>
+    </item>
+    
+    <item>
+      <title>Automated deployment</title>
+      <link>https://keanemind.github.io/blog/automated-deployment/</link>
+      <pubDate>Sun, 26 Feb 2017 10:15:37 -0600</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/automated-deployment/</guid>
+      <description>On Friday, I spent a few hours of trial and error setting up automated deployment for this website. Automated deployment allows me to update my site more easily. First, I push changes to my website&amp;rsquo;s source files to a source branch on my Github pages repository. Then, a Wercker application I set up builds my website from the files in the source branch. Finally, Wercker pushes the built website files to my master branch and the changes can be seen on the actual website.</description>
+    </item>
+    
+    <item>
+      <title>Objective update 1</title>
+      <link>https://keanemind.github.io/blog/objective-update-1/</link>
+      <pubDate>Wed, 22 Feb 2017 19:48:30 -0600</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/objective-update-1/</guid>
+      <description>The way this is going to work is that I&amp;rsquo;m going to keep a status update on this blog about what my current short-term objectives are.
+I have two objectives for the next few months:
+The first is becoming proficient in Python. I am using the book &amp;ldquo;Dive into Python 3&amp;rdquo; to learn the basics at the moment. I need to come up with simple program ideas that I can implement with Python to practice as I go.</description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://keanemind.github.io/blog/hello-world/</link>
+      <pubDate>Wed, 22 Feb 2017 17:39:42 -0600</pubDate>
+      
+      <guid>https://keanemind.github.io/blog/hello-world/</guid>
+      <description>Hello, world! This is my first post on this website. This is certainly not the first website I&amp;rsquo;ve ever created or hosted, but I do hope that this will be the longest running site I&amp;rsquo;ve made yet.
+My goal is for this blog to be a journal and portfolio of my technological endeavors as I go through the process of becoming a better coder and creator.
+As of now, I intend to keep this blog completely focused on tech; I will not chronicle other aspects of my life here.</description>
+    </item>
+    
+  </channel>
+</rss>

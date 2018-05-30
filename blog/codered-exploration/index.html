@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Keane Nguyen&#39;s personal website">
+
+
+<meta property="og:site_name" content="Keane Nguyen" />
+<meta property="og:locale" content="nn_NO" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://keanemind.github.io/blog/codered-exploration/" />
+<meta property="og:title" content="CodeRED Exploration" />
+<meta property="twitter:title" content="CodeRED Exploration">
+
+    <meta property="og:image" content="https://keanemind.github.io/img/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://keanemind.github.io/img/banner.png">
+
+<meta property="og:description" content="">
+<meta property="twitter:description" content="">
+<title>
+
+
+     Keane Nguyen - CodeRED Exploration 
+
+</title>
+<link rel="canonical" href="https://keanemind.github.io/blog/codered-exploration/">
+
+
+<style media="screen">
+  @font-face {
+  font-family: 'Nexa Bold';
+  src: url('https://keanemind.github.io/fonts/Nexa Bold.otf');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+html {
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100%;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  color: #111111;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility !important;
+}
+.icon {
+  text-rendering: geometricPrecision !important;
+}
+section {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+}
+.container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+}
+section.header .container {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+section.header .content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+section.header .container .logo {
+  max-width: 100px;
+  margin-left: -2em;
+}
+section.header .name {
+  padding-top: 20px;
+  font-size: 28px;
+  font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
+  letter-spacing: -0.005rem;
+  text-transform: uppercase;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: #333333;
+  color: #555555;
+}
+section.header nav {
+  margin-bottom: 16px;
+}
+section.header nav ul {
+  list-style: none;
+  text-align: center;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: -ms-inline-flex;
+  display: inline-flex;
+}
+section.header nav ul a {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+section.header nav ul a:first-child {
+  margin-left: 0;
+}
+section.header nav ul a:last-child {
+  margin-right: 0;
+}
+section.header nav ul li {
+  color: #555555;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+section.header nav ul li:hover {
+  color: #111111;
+}
+section.footer .container {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  width: 100%;
+  text-align: center;
+}
+section.footer .container a {
+  font-size: 14px;
+  margin-left: 6px;
+  margin-right: 6px;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+section.footer .container a:first-child {
+  margin-left: 0;
+}
+section.footer .container a:last-child {
+  margin-right: 0;
+}
+section.footer .container a:hover {
+  opacity: 0.8;
+}
+section.footer .container a .icon {
+  width: 16px;
+  height: 16px;
+}
+section.footer .container .copyright {
+  flex-grow: 0.5;
+  text-align: start;
+}
+section.footer .container .icons {
+  flex-grow: 0.5;
+  text-align: end;
+}
+section.main .container {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+}
+section.main .content {
+  color: #111111;
+  font-size: 16px;
+}
+section.main .content .title-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+section.main .content .posts {
+  margin-bottom: 4em;
+}
+section.main .content .page-heading {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  letter-spacing: -0.005rem;
+  text-transform: uppercase;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: #333333;
+  margin-bottom: 16px;
+}
+section.main .content .front-matter .page-heading {
+  margin-bottom: 0;
+}
+section.main .content .front-matter .meta {
+  font-size: 14px;
+  color: #666666;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 32px;
+}
+section.main .content .front-matter .date,
+section.main .content .front-matter .author,
+section.main .content .front-matter .tags,
+section.main .content .front-matter .word-count,
+section.main .content .front-matter .reading-time .middot {
+  display: none;
+}
+section.main .content .front-matter .middot {
+  font-size: 6px;
+  margin: 0 6px;
+  display: inline;
+  vertical-align: middle;
+}
+section.main .content .front-matter .middot:before {
+  content: "•";
+}
+section.main .content .front-matter .tags ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+section.main .content .front-matter .tags ul li {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+section.main .content .front-matter .tags ul li:hover {
+  opacity: 0.7;
+}
+section.main .content .front-matter .tags ul li a {
+  color: #666666;
+}
+section.main .container.f04 {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+section.main .container.f04 .content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+section.main .container.f04 .content .num {
+  margin: 30px 0px 30px 0;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 50px;
+}
+section.main .container.f04 .content .detail {
+  margin-bottom: 40px;
+}
+section.main .container .content .groupby {
+  margin-top: 1em;
+  padding-left: 0.5em;
+}
+section.main .container .content .post-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: list-item;
+  list-style: disc inside;
+}
+section.main .container .content .post-item .meta {
+  font-size: 14px;
+  color: #666666;
+  display: none;
+  min-width: 100px;
+}
+section.main .container .content .see-more {
+  font-style: italic;
+  float: right;
+  font-size: 0.9em;
+  margin-top: 2em;
+  color: #313537;
+}
+section.main .container .content .see-more:hover {
+  color: #666;
+}
+section {
+  padding: 0 16px;
+}
+section.header {
+  padding-top: 10px;
+}
+section.header-home {
+  padding-top: 36px;
+}
+section.main {
+  padding-top: 32px;
+}
+section.main .container .content .post-item .meta {
+    display: block;
+}
+section.main .container .content .post-item {
+    display: flex;
+    list-style: none;
+}
+a {
+  color: #428bca;
+  -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+a:hover {
+  color: #2a6496;
+}
+img {
+  max-width: 100%;
+}
+section.main .content {
+    width: 100%;
+}
+section.main .content .markdown {
+  font-size: 1.1em;
+  line-height: 1.75em;
+  color: #313537;
+  font-family: serif;
+  font-weight: 300;
+}
+section.main .content .markdown h1,
+section.main .content .markdown h2,
+section.main .content .markdown h3,
+section.main .content .markdown h4,
+section.main .content .markdown h5,
+section.main .content .markdown h6 {
+  font-size: 22px;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  letter-spacing: -0.005rem;
+  font-weight: 700;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  color: #333333;
+  text-transform: none;
+  margin-top: 1.75rem;
+}
+section.main .content .markdown h1 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+section.main .content .markdown h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+section.main .content .markdown h3 {
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+section.main .content .markdown h4,
+section.main .content .markdown h5,
+section.main .content .markdown h6 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: none;
+}
+section.main .content .markdown code,
+section.main .content .markdown pre {
+  font-family: 'Menlo', monospace;
+  font-size: 0.98rem;
+  background-color: #f7f7f7;
+}
+section.main .content .markdown code {
+  /* enclosed by single backtick (`) */
+  padding: .15em .5em;
+  border-radius: 2px;
+}
+section.main .content .markdown pre {
+  /* Hugo specific: consider using the 'highlight' shortcode */
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  line-height: 1.5em;
+  white-space: pre;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+section.main .content .markdown pre code {
+  /* enclosed by 4 backticks (````) */
+  padding: 0;
+  font-size: 0.9rem;
+}
+section.main .content .markdown a code {
+  color: #428bca !important;
+}
+section.main .content .markdown a code:hover {
+  text-decoration: underline;
+}
+section.main .content .markdown p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+section.main .content .markdown ul,
+section.main .content .markdown ol,
+section.main .content .markdown dl {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+section.main .content .markdown dt {
+  font-weight: bold;
+}
+section.main .content .markdown dd {
+  margin-bottom: .5rem;
+}
+section.main .content .markdown ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-bottom: 1.25rem;
+}
+section.main .content .markdown ol {
+  list-style-type: decimal;
+  margin-bottom: 1.25rem;
+}
+section.main .content .markdown li {
+  margin-left: 2em;
+}
+section.main .content .markdown em {
+  font-style: italic;
+}
+section.main .content .markdown strong {
+  font-weight: 700;
+}
+section.main .content .markdown hr {
+  position: relative;
+  margin: 1.75rem 0;
+  border: 0;
+  border-top: 1px solid #808080;
+  border-top: 1px solid #999999;
+}
+section.main .content .markdown abbr {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #666666;
+  text-transform: uppercase;
+}
+section.main .content .markdown abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #808080;
+}
+section.main .content .markdown blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
+}
+section.main .content .markdown blockquote p:last-child {
+  margin-bottom: 0;
+}
+section.main .content .markdown figure {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 1em;
+}
+section.main .content .markdown figure img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  position: static;
+  margin: auto;
+}
+section.main .content .markdown table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+section.main .content .markdown td,
+section.main .content .markdown th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+section.main .content .markdown tbody tr:nth-child(odd) td,
+section.main .content .markdown tbody tr:nth-child(odd) th {
+  background-color: #f7f7f7;
+}
+section.main .content .markdown .footnotes ol {
+  list-style-type: decimal;
+  margin-left: 16px;
+}
+section.main .content .markdown .footnotes li {
+  list-style-type: unset;
+}
+section.main .content .markdown .footnote-ref {
+  font-size: 0.7em;
+}
+section.main .content .navigation {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding: 2em;
+}
+section.main .content .navigation div {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin-top: 1em;
+}
+section.main .content .navigation .icon {
+  width: 16px;
+  height: 16px;
+}
+section.main .content .navigation a {
+  width: 250px;
+  margin: 0 1em;
+  text-align: center;
+  font-style: italic;
+  color: #313537;
+}
+section.main .content .share, section.main .content .share div {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+section.main .content .share {
+  background-color: rgba(152, 152, 152, 0.07);
+  padding: 1em 0;
+}
+section.main .content .share a {
+  margin: 0 6px;
+}
+
+/* Fonts */
+
+.wf-raleway-n4-active body, 
+.wf-raleway-n4-active section.header nav ul li,
+.wf-raleway-n7-active section.main .content .page-heading,
+.wf-raleway-n2-active section.main .container.f04 .content .num,
+.wf-raleway-n7-active section.main .content .markdown h1,
+.wf-raleway-n7-active section.main .content .markdown h2,
+.wf-raleway-n7-active section.main .content .markdown h3,
+.wf-raleway-n7-active section.main .content .markdown h4,
+.wf-raleway-n7-active section.main .content .markdown h5,
+.wf-raleway-n7-active section.main .content .markdown h6 {
+  font-family: 'Raleway';
+}
+
+.wf-merriweather-n3-active section.main .content .markdown {
+  font-family: 'Merriweather';
+}
+
+.wf-ubuntu-mono-n4-active section.main .content .markdown code,
+.wf-ubuntu-mono-n4-active section.main .content .markdown pre {
+  font-family: 'Ubuntu Mono';
+}
+</style>
+<style media="(min-width: 600px)">
+  body {
+-webkit-justify-content: center;
+-moz-justify-content: center;
+-ms-justify-content: center;
+justify-content: center;
+}
+.non-narrow.zero-top-spacing {
+padding-top: 0 !important;
+}
+section {
+padding: 0 16px;
+margin-left: 100px;
+margin-right: 100px;
+max-width: 750px;
+}
+section.header {
+background-color: transparent;
+}
+section.header .container {
+-webkit-justify-content: flex-start;
+-moz-justify-content: flex-start;
+-ms-justify-content: flex-start;
+justify-content: flex-start;
+}
+section.header .container .logo {
+margin: 0;
+}
+section.header-home .container .logo {
+max-width: 180px;
+margin-left: 20px;
+}
+section.header-home .name-home {
+padding-top: 30px;
+font-size: 40px;
+}
+section.header-home nav ul li {
+font-size: 18px;
+}
+section.header .content {
+-webkit-align-items: flex-start;
+-moz-align-items: flex-start;
+-ms-align-items: flex-start;
+align-items: flex-start;
+}
+section.header .name {
+color: #333333;
+}
+section.header nav {
+font-size: 14px;
+margin-bottom: 0;
+}
+section.header nav ul {
+text-align: left;
+}
+section.header nav ul li {
+color: #666666;
+}
+section.header nav ul li:hover {
+color: #333333;
+}
+section.footer {
+background-color: transparent;
+}
+section.footer .container {
+flex-direction: row;
+}
+section.footer .container a {
+margin-left: 3px;
+margin-right: 3px;
+color: #666666;
+}
+section.footer .container a:hover {
+color: #333333;
+}
+section.footer .container a .icon {
+font-size: 18px;
+}
+section.footer .container a .icon.larger {
+font-size: 20px;
+}
+section.main .content .front-matter .date,
+section.main .content .front-matter .author,
+section.main .content .front-matter .tags,
+section.main .content .front-matter .word-count,
+section.main .content .front-matter .reading-time .middot {
+display: initial;
+}
+section.main .container.f04 {
+-webkit-justify-content: flex-start;
+-moz-justify-content: flex-start;
+-ms-justify-content: flex-start;
+justify-content: flex-start;
+}
+section.main .container.f04 .content {
+-webkit-align-items: flex-start;
+-moz-align-items: flex-start;
+-ms-align-items: flex-start;
+align-items: flex-start;
+}
+section.main .container.f04 .content .num {
+margin: 0 0 10px 0;
+font-size: 32px;
+}
+section.main .container.f04 .content .detail {
+margin-bottom: 30px;
+}
+.container {
+padding: 0 30px;
+}
+section.header {
+padding-top: 60px;
+padding-bottom: 60px;
+}
+section.footer {
+padding-top: 30px;
+padding-bottom: 60px;
+}
+section.main {
+padding-top: 0;
+}
+section.main .container .content .post-item {
+display: flex;
+list-style: none;
+padding-left: 1.5em;
+}
+section.main .container .content .post-item .meta {
+display: block;
+}
+section.main.post {
+padding-top: 60px;
+padding-bottom: 60px;
+}
+section.main .content .markdown blockquote {
+padding-right: 5rem;
+padding-left: 1.25rem;
+}
+section.main .content .navigation {
+-webkit-flex-direction: row;
+-moz-flex-direction: row;
+-ms-flex-direction: row;
+flex-direction: row;
+}
+section.main .content .navigation div {
+margin-top: 0em;
+}
+</style>
+<style media="(min-width: 769px)">
+  section.main .content .markdown figure {
+width: 110%;
+margin-left: -4%;
+}
+section.main .content .markdown img {
+max-width: 110%;
+width: 110%;
+margin-left: -4%;
+}
+section.main .content .markdown pre {
+width: 110%;
+margin-left: -4%;
+}
+</style>
+
+<noscript>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+</noscript>
+
+
+  <style type="text/css" media="screen">
+    .hljs{display:block;background:white;padding:0.5em;color:#333333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-string,.hljs-variable,.hljs-template-variable,.hljs-strong,.hljs-emphasis,.hljs-quote{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-literal,.hljs-symbol,.hljs-bullet,.hljs-attribute{color:#0086b3}.hljs-section,.hljs-name{color:#63a35c}.hljs-tag{color:#333333}.hljs-title,.hljs-attr,.hljs-selector-id,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}
+  </style>
+
+
+
+  <style type="text/css" media="screen">
+    .progressive{overflow:hidden;position:relative;background:#efefef}.progressive__img{width:100%;height:100%;position:absolute;-webkit-transform:translateZ(0);transform:translateZ(0)}.progressive--not-loaded{filter:blur(30px);-webkit-filter:blur(30px)}.progressive--is-loaded{filter:blur(20px);-webkit-filter:blur(20px);-webkit-animation:sharpen .5s both;animation:sharpen .5s both}@-webkit-keyframes sharpen{from{filter:blur(20px);-webkit-filter:blur(20px)}to{filter:blur(0);-webkit-filter:blur(0)}}@keyframes sharpen{from{filter:blur(20px);-webkit-filter:blur(20px)}to{filter:blur(0);-webkit-filter:blur(0)}}
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://keanemind.github.io/img/icon.jpg"
+
+>
+
+
+
+
+</head>
+
+
+<body>
+
+<section class="header header-home">
+
+    <div class="container">
+        <a href="https://keanemind.github.io/"><img class="logo" src="https://keanemind.github.io/img/logo.jpg" alt="logo" /></a>
+        <div class="content">
+            <a href="https://keanemind.github.io/"><div class="name"><h1>Keane Nguyen</h1></div></a>
+            <nav>
+                <ul>
+                    
+                        <a href="https://keanemind.github.io/blog/"><li>Blog</li></a>
+                    
+                    
+                        
+                            
+                        
+                    
+                    
+                        
+                            <a href="https://keanemind.github.io/projects/"><li>Projects</li></a>
+                        
+                    
+                        
+                            <a href="https://keanemind.github.io/about/"><li>About</li></a>
+                        
+                    
+                        
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    CodeRED Exploration
+
+</div>
+
+                </div>
+                <div class="meta">
+                    <div class="date" title="Thu Jan 4 2018 22:39:50 -0600">Jan 4, 2018</div>
+                    
+                        
+                    
+                    <div class="reading-time"><div class="middot"></div>19 minute read</div>
+                    <div class="tags">
+                        <ul>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="markdown">
+                
+    
+    
+
+<h2 id="nov-4-2017-5-00-am-en-route">Nov. 4, 2017 5:00 AM - En Route</h2>
+
+<p>Two months ago, I hopped on a charter bus at 5:00 in the morning and headed for Houston. Busy writing and debugging my LC3 programming assignment on my laptop, I didn&rsquo;t even realize at first when we arrived at the University of Houston campus. When I finally looked around just as we were pulling to a stop, I recognized some of the faintly familiar buildings. Over a year ago, CodeRED Curiosity was my first ever hackathon. Now, CodeRED Exploration would be my fourth. My team was completely different this time. It comprised three good friends and fellow UT Austin students: Bala (ECE), Leon (CS), and Max (Math).</p>
+
+<p>We got off the bus and walked into the student union, led by a friendly event organizer who directed us upstairs where registration was taking place. I was surprised to see unoccupied CodeRED volunteers waiting for us behind a desk, where one year ago there had been an enormous line that snaked around the entire building. This time, the people from our bus were the only ones there.</p>
+
+<p>For the next hour, we waited in the auditorium where the opening ceremony would be held. Max, Leon and I decided to sit in the front row, much to Bala&rsquo;s annoyance. We tried to come up with a last-minute idea, speaking loudly to each other, trying to think over the terrible electronic music being blasted through the room&rsquo;s sound system. I developed a headache that grew worse over time, aggravated by booming bass notes that rumbled my chest. The crowd behind me was growing too, about doubling in size, but never even approaching what it was last year. Just as I thought I could no longer tolerate the head-rattling output from the subwoofers, the music stopped and CodeRED&rsquo;s head organizer stepped up to the podium to speak.</p>
+
+<p>As soon as the opening ceremony was over, my teammates and I headed to the business building and scouted for a private room to work in. Finding the doors to every small room locked, we settled with sharing a larger room with other teams. We left our backpacks on a table and headed back to the lobby to find free goodies from the sponsors.</p>
+
+<h2 id="nov-4-2017-1-30-pm-picking-a-project">Nov. 4, 2017 1:30 PM - Picking a Project</h2>
+
+<p>When we came back, other teams had already begun hacking. We knew that we needed to decide on a project, quickly. We had a few ideas that we had come up with in the week before the event, but couldn&rsquo;t agree upon which one to work on. As we debated, I discovered that we each had different goals coming into the event. Leon and Bala were interested in learning something new: machine learning and augmented reality, respectively. Max wanted to try to win a prize by completing one of the challenges given to us by the CodeRED sponsors. I wanted to have a finished product by the end of the hackathon.</p>
+
+<p>An hour passed, during which we intensely discussed and reduced of our list of ideas through the process of elimination. The first workshop of the day was beginning soon. It was going to be on creating a chatbot with Microsoft LUIS, and we hoped that it would inspire us toward an idea. As we got ready to head off to the workshop room, Leon declared that we shouldn&rsquo;t return until we&rsquo;d chosen what our project would be. We all agreed.</p>
+
+<p>I quickly found out during the workshop that LUIS was not interesting to me. Rather than following along with the presenter, I took the time to search for a compromise between our conflicting interests. As the workshop wrapped up and everyone began to leave the room, my team and I stood around each other.</p>
+
+<p>&ldquo;We&rsquo;re not going back until we decide on something,&rdquo; Leon insisted.</p>
+
+<p>Bala made a push for a text messaging idea that he had told us about earlier. It wasn&rsquo;t augmented reality, but he thought it would be fun to use the Twilio API. Leon and Max ended up conceding, and we finally settled upon Bala&rsquo;s suggestion. I was inwardly pleased, as the idea seemed simple enough that we would be able to finish it within 24 hours.</p>
+
+<p>We lucked out on the way back and happened upon a very small, unlocked room. It was normally reserved for business graduate students, according to the sign on the door. We soon found out that the door automatically locked. We had no problem opening the door from the inside, but it was locked to outsiders, which probably confirmed that we weren&rsquo;t supposed to be in the room.  No matter; the worst thing that could happen was that we would be asked to leave. We made the decision to move our belongings to the new room, where we would have a quieter and more focused environment to work. We dealt with the locked door by keeping at least one of us inside the room at all times to allow in the others.</p>
+
+<p>Perhaps these are superfluous details to you, but my primary purpose in writing this story is to facilitate my own recollection of the event in the future. I&rsquo;ll get on with the main story; a story of how a few inexperienced hackers, working on a supposedly easy project, fell short of their expectations.</p>
+
+<h2 id="nov-4-2017-3-45-pm-the-google-grind">Nov. 4, 2017 3:45 PM - The Google Grind</h2>
+
+<p>Bala&rsquo;s idea was to create a service that gave users access to phone numbers in their Google contacts from any SMS-enabled phone. The service would use the Twilio API to have a phone number that users could text. Whenever a user was without their phone, they could use another person&rsquo;s phone to text our service&rsquo;s Twilio number. In their message would be their phone number, some kind of security measure, and a contact name. Our server would look up the contact from Google, find the contact&rsquo;s number, and text it back to the user through Twilio.</p>
+
+<p>Our first step was dividing into roles. Max and I would work on creating a server that could interact with the Twilio and Google People (contacts) APIs. Leon and Bala would work on setting up a database for the server to connect to. I also came up with the project&rsquo;s name: Lost-n-Phoned, a play on the phrase Lost-n-Found.</p>
+
+<p>The next thing we did was decide as a team what kind of database we would use to store user authentication data. Bala offered to use what he had learned the weekend before at HackTX to set up a MongoDB instance. However, if we used Oracle Cloud for our database, we would be eligible to win Oracle&rsquo;s prize. We opted for the latter option, hoping that using Oracle Cloud would have the additional benefit of being a good learning experience.</p>
+
+<p>As Bala and Leon started setting up an Oracle account, Max and I started setting up a Flask project and reading Twilio&rsquo;s API docs. Twilio was surprisingly easy to set up and use; they had a Python helper package with well-documented methods that made life very easy. It was when we got to the Google People API integration that we first ran into trouble.</p>
+
+<p>First of all, Google&rsquo;s docs were disorganized, spread across multiple websites, outdated, and often contradictory. It didn&rsquo;t take long for us to realize that we were in way over our heads. OAuth2 was not easy to understand, and Google&rsquo;s Python modules for connecting to their APIs were very confusing to use. To make matters worse, Google&rsquo;s code examples had errors in them. For at least an hour, we tried to use a set of their modules as instructed by some docs we found. When we found another page—which told us to use different modules—we scrapped our nonfunctional code and switched over. Later, after the event, I discovered that the modules we were using at first were deprecated! There was no indication whatsoever in the outdated docs.</p>
+
+<p>Another couple of hours passed with lots of reading, lots of testing, and no progress. Sometime during this standstill, Bala switched tasks and joined Max and I in working with the API. We couldn&rsquo;t get users to give us permissions to their Google contacts, let alone access those contacts. We needed to generate a unique Google authentication URL for the user to visit and log into their Google account. What we did in the end was copy and paste a full example from Google&rsquo;s docs, and then work from there.</p>
+
+<p>By about 11:00 PM, with the help of fellow hacker Dustin Kazi, we were able to receive a message from a user, reply with a generic authentication link that redirected to a unique Google login page, and then obtain the user&rsquo;s contacts in JSON form from Google. Foolishly thinking that the registration and authentication process was mostly complete, we celebrated and rested as Leon continued working to setup the SQL database.</p>
+
+<h2 id="nov-5-2017-12-00-am-intermission">Nov. 5, 2017 12:00 AM - Intermission</h2>
+
+<p>We were all exhausted and sleepy by midnight. I asked everyone to come take a walk outside with me, hoping to wake them up and give them the energy to make a final push to finish the project. We moved a trash can to block the door from closing and locking us out, and left. We stumbled upon a close game of real-life Angry Birds at the end of the hall and spectated, hoping to participate in the next game. Unfortunately, we found out after the match ended that that was the final one.</p>
+
+<p>I suggested that we walk to the student union, where my high school teammates and I had played arcade games the year before during CodeRED Curiosity. When we got there, we were foiled again; we only made it a few steps inside the door before a sanitation worker told us that the building was closed. Not discouraged by our second disappointment, we headed back outside, walked around, and found a building that was still open. Inside it was a curved hallway and an unlocked, empty lecture room where we pretended to be students and teachers. I took a candid photo of my friends in the hallway before we returned to the business building.</p>
+
+<p><figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://keanemind.github.io/img/bala-leon-max-uh.jpg" src="https://keanemind.github.io/img/low/bala-leon-max-uh.jpg" alt="image" /></p></figure>
+
+<h2 id="nov-5-2017-1-00-am-so-close-yet-so-far">Nov. 5, 2017 1:00 AM - So Close, Yet So Far</h2>
+
+<p>We took turns playing energetic hip-hop music when we got back to our tiny room. Max and Bala worked on formatting the complicated JSONs that the Google People API was giving us while I started reading SQL docs to help Leon. There was something wrong with the SQL commands that Leon&rsquo;s code was sending to his database. Reading up about SQL syntax didn&rsquo;t help except to verify that his commands were already syntactically correct. There must have been a mistake with his table names, or some related oversight. Whatever it was, I realized that I was of little help to Leon. I got out my blanket and laid down on the floor. Max and Bala, having successfully printed the user&rsquo;s contacts on the terminal, laid down as well. I soon drifted off.</p>
+
+<p>My alarm woke me up four hours later, at 8:00. Leon and Bala were awake, staring at their laptops. I&rsquo;m not sure if Leon slept at all. He greeted me and told me that the database was operational. Too tired to celebrate, I weakly congratulated him.</p>
+
+<p>My head was throbbing and my entire body begged me for just 30 more minutes of sleep. Every little movement required an extraordinary effort, but I forced myself to open my laptop. I pulled Leon&rsquo;s latest code, which was in a separate file named sql.py (Max, Bala, and I had been working in sms.py). Squinting at the code, I discovered that Leon had coded new user registration logic, as well as a challenge-response authentication scheme! Neither were complete, but I could tell he was creating a system where the server sent the user a plaintext number and the user replied with their password (another number) multiplied by the plaintext number.</p>
+
+<p>We still had not finished the part of the program where the server sends the user their Google contacts—remember, we had only printed the contacts on the terminal—so I got to work. Now that the database was working and Leon had finished his helper functions in sql.py, I needed to connect to the database in sms.py to add the new user&rsquo;s credentials when they authenticated, and then later access the user&rsquo;s Google authentication token whenever they texted our Twilio number a name.</p>
+
+<p>The thing is, I didn&rsquo;t know that that was what I needed to do. None of us knew how the sms.py code worked at the time. The example code that we had copy-pasted used the flask.session dictionary to store credential data when a user authenticated. Since that wasn&rsquo;t a persistent way of storing credentials, the data would be lost every time we restarted the code. In addition, even if we kept the code running, there was some kind of bug with the way we were handling the credentials. We needed to use the credentials obtained in the <code>oauth2callback()</code> function in another function that could send a text to the user. There was no issue with connecting to Google and printing the user&rsquo;s contacts within <code>oauth2callback()</code> but for some reason, errors kept showing up when we tried to connect to the Google API within the <code>twilio()</code> function.</p>
+
+<h2 id="nov-5-2017-11-00-am-panic-sets-in">Nov. 5, 2017 11:00 AM - Panic Sets In</h2>
+
+<p>Hearing a knocking, I opened the door to see a CodeRED coordinator who asked us to move our things downstairs into a mid-sized lecture room. All hackers were being moved into these lecture rooms, each of which hosted several teams. It was there that we would finish our hacks and eventually be judged.</p>
+
+<p>Our debugging efforts became frantic as time ran out. With only one hour left, we still had not figured out what was wrong. I requested my team&rsquo;s permission to use <a href="https://github.com/ajalt/fuckitpy">FuckIt.py</a> to ignore the error we were getting, but nobody shared my amusement with the idea. Just minutes before hacks were due, Bala took my computer and added print statements to the program in a series of commits with silly messages, which you can find in <a href="https://github.com/ljacob15/lost-and-phoned/commits/master">Lost-n-Phoned&rsquo;s git history</a>. One minute before the end of hacking, we surrendered and hard-coded the server&rsquo;s responses for our presentation. The server would always reply to the user (one of us) with a phone number that we made up.</p>
+
+<h2 id="nov-5-2017-1-00-pm-judging">Nov. 5, 2017 1:00 PM - Judging</h2>
+
+<p>Judging did not go very well. I knew there was a strong, energetic presenter somewhere within every member of the team, but he must have needed more sleep than the few hours we had allotted because he never showed up. Crippled by sleep deprivation, we completely failed to convey our enthusiasm for the project. Presentations were timed, and we were given only a few minutes to demo Lost-n-Phoned and sell to the judges why it was useful. And yet, we still had awkward pauses where nobody knew what to say or do. We should have been planning what needed to be said in the time we were busy trying to fix the code.</p>
+
+<p>When we finished speaking, the judges politely nodded their heads. They told us that they found our idea interesting, but not very useful. One lady said that she wouldn&rsquo;t feel comfortable handing her phone to a stranger for them to make texts and a phone call. Other judges agreed, noting that users would have trouble accessing Lost-n-Phoned if they were phoneless because strangers like the judges would not lend our users a phone to text with.</p>
+
+<p>After our presentation was over, we headed downstairs to the food line to eat lunch. CodeRED volunteers were gratuitously placing as many sub sandwiches as they could on each person&rsquo;s plate as they walked through. When it was my turn, they gave me six sandwiches even though I declined all but the first. Someone running the event had evidently ordered way too much Jimmy John&rsquo;s.</p>
+
+<p>I walked off with my plateful and found my friend Usman from UT Austin eating with his teammates at a table near the food line. My team and I sat down and spent a half-hour commiserating with the other team. Usman&rsquo;s team had had a similar experience to ours; they were working with APIs for the first time and had a great deal of trouble using the Google Maps API.</p>
+
+<p>Upon returning to the room where we had presented, we were surprised to find a judge waiting for us. There was another round of judging that we didn&rsquo;t know about, with completely different judges, for the Oracle Cloud competition! Again we clumsily went through the pitch, again with enthusiasm lacking from both presenters and audience. These judges too, were unimpressed. Our use of the Oracle Cloud database was neither unique nor creative.</p>
+
+<h2 id="nov-5-2017-3-00-pm-final-moments">Nov. 5, 2017 3:00 PM - Final Moments</h2>
+
+<p>We were finally told to walk to a much larger lecture hall in a different building for the awards ceremony. As soon as I sat down, I knew I wouldn&rsquo;t be able to stay awake. I fall asleep during the final presentations at every hackathon I attend, and this one would be no different. Max and I were knocked out almost immediately. I only woke up for a brief moment when I heard Usman&rsquo;s voice from onstage. His team had won something, but I was too tired to pay attention. With my head down and my eyes closed, I clapped as Usman finished speaking and swiftly returned to my dreams.</p>
+
+<p>CodeRED Exploration ended, and my teammates and I were soon in UH&rsquo;s student union, waiting for the bus that would take us back to Austin. My friends were joking about how impressive the team of high schoolers was. Apparently, they had won CodeRED&rsquo;s grand prize by creating a pen which, when used as a normal pen, would save what it wrote as text on a computer. Pretending to be the one of the high schoolers presenting at some future hackathon, Max said, &ldquo;Do you guys know that thing called world hunger? Let&rsquo;s just say you don&rsquo;t need to worry about it anymore.&rdquo; We all laughed uncontrollably.</p>
+
+<p>We ordered breakfast foods from McDonald&rsquo;s, even though it was well into the afternoon, and sat down at a table to quietly enjoy our last moments at the University of Houston together. I spent the time eating my pancakes and reminiscing about being in the exact same situation with my high school friends one year ago.</p>
+
+<p>We were on the bus within the hour, but were delayed by some missing hackers that were supposed to be on the bus with us. At least one of them was on Usman&rsquo;s team. We eventually left without them, and Usman would later tell me that his teammate had stayed in Houston to do some other business.</p>
+
+<h2 id="nov-5-2017-5-00-pm-reflection">Nov. 5, 2017 5:00 PM - Reflection</h2>
+
+<p>On the way back, I split my time between working on my LC3 assignment and reflecting on the hackathon. As the sun set and my friends slept, I determined that we had made several crucial mistakes.</p>
+
+<p>The first mistake was underestimating the difficulty of using the Google People API and Oracle Cloud. We should have chosen the idea before we came to the hackathon, and started the learning process earlier. A little experience with the tools that we were using for our project (such as Flask, the Google People API, and SQL) would have gone a long way and saved us some sleep.</p>
+
+<p>The second mistake was being disorganized because we didn&rsquo;t understand what we needed to do to create Lost-n-Phoned. There were many times during those 24 hours that one or more team members—including myself—did not know what we were supposed to be working on. This got especially bad after midnight as we became tired. Next time, we need to know exactly how our hack will work beforehand and plan out our roles and our code accordingly.</p>
+
+<p>Thirdly, we had some communication problems. The disconnect in goals for the hackathon was a big problem that delayed us a long time from choosing an idea. We should have talked about this long before we got to Houston, not an hour into the hackathon! Also, Leon was on his own working on the database for so long that when he finished, he had coded some things that we had also coded, such as the registration process. In other words, there were functionality overlaps between Leon&rsquo;s sql.py and Max, Bala, and I&rsquo;s sms.py! We should have communicated how everything should be integrated together and what we needed from each other.</p>
+
+<p>Lastly, we did not prioritize coding the core functionality of the hack. The single most important functionality of Lost-n-Phoned is sending the user their Google contacts via SMS. For some reason, we did not realize that the last step in achieving this was non-trivial to get working until the very end. As soon as we were able to connect to the API and retrieve contact data, we should have started working on texting the contacts to the user. Printing their contacts on the console was a step forward, but was not enough to celebrate; the core functionality was still unfinished.</p>
+
+<p>I would later tell my teammates that I thought this last point was our greatest mistake. Weeks after CodeRED, Max told me that he used my lesson of &ldquo;focusing on the core functionality&rdquo; for a website that he had been wanting to create.</p>
+
+<p>&ldquo;I was thinking about learning to setup my Raspberry Pi to host a website,&rdquo; he said, &ldquo;but then I remembered what you said about core functionality. There&rsquo;s no point in setting up my Pi if I don&rsquo;t have a website, so I think I&rsquo;m going to learn to code one first.&rdquo;</p>
+
+<p>I think the most important takeaways from CodeRED were:</p>
+
+<ol>
+<li><p>We must know what our project will be before the event.</p></li>
+
+<li><p>We should learn about and practice using the tools we&rsquo;ll need for the project.</p></li>
+
+<li><p>If we follow the second point, we should be able to plan most of the project, how it will work, and what each team member&rsquo;s roles will be.</p></li>
+
+<li><p>During the hackathon, we need to finish coding the core functionality first so that we have something working we can demo to the judges.</p></li>
+</ol>
+
+<p>It has not been lost on me that the last three points are applicable to <em>all</em> projects in general, not just software for hackathons. I guess this goes to show that hackathons really can teach you lifelong skills, even if you aren&rsquo;t big on coding.</p>
+
+<p>Despite the blunders, I do not regret anything me or my team did at CodeRED Exploration. We had a huge amount of fun and learned a lot from our mistakes. This was the hardest I&rsquo;ve ever worked at a hackathon and the closest I ever got to having a fully functioning project by the end of one. I certainly hope I can work with Bala, Leon, and Max again at later hackathons. They are hard-working, bright, and creative guys that I know I can find success with. We have since applied to other hackathons together, but I don&rsquo;t know yet if we&rsquo;ll be admitted into any.</p>
+
+<h2 id="nov-9-2017-and-onward-the-future-of-lost-n-phoned">Nov. 9, 2017 and Onward - The Future of Lost-n-Phoned</h2>
+
+<p>A few days after the hackathon, I returned to the code and continued working on the project. I ended up deleting some of Leon&rsquo;s functions in sql.py that were overlapping with sms.py. I also deleted his security functions, which I feel bad about. I should have asked him first, but I think their removal was justifiable because he didn&rsquo;t tell the rest of the team that he was even coding the security, let alone how it worked or how we could use it. Today, the team has yet to come to an agreement about the best way to implement security for Lost-n-Phoned users, which prevents me from finishing the code.</p>
+
+<p>I&rsquo;ll talk about that and the changes I made to Lost-n-Phoned post-CodeRED in my next blog post.</p>
+
+
+                <br>
+            </div>
+            
+            
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+
+        
+
+        <div class="copyright">
+
+        
+            <a href="javascript:;">Copyright 2018 Keane Nguyen</a>
+        
+
+        </div>
+        <div class="icons">
+
+        
+
+        
+            <a href="https://github.com/keanemind" target="_blank">
+                <img class="icon" src="https://keanemind.github.io/img/github.svg" alt="github" />
+            </a>
+        
+
+        
+
+        
+
+        
+            <a href="mailto:keanekyn@gmail.com">
+                <img class="icon" src="https://keanemind.github.io/img/email.svg" alt="email" />
+            </a>
+        
+
+        
+            <a href="https://keanemind.github.io/index.xml">
+                <img class="icon" src="https://keanemind.github.io/img/rss.svg" alt="rss" />
+            </a>
+        
+
+        </div>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Raleway:400,600,700', 'Merriweather:300,300i,700,700i', 'Ubuntu+Mono:400,700']
+    }
+  });
+</script>
+
+
+  <script src="https://keanemind.github.io/js/highlight.min.js" defer></script>
+  
+
+
+
+  <script src="https://keanemind.github.io/js/progressively.min.js" defer></script>
+
+
+
+
+
+
+
+
+
+<script>
+  window.onload = function() {
+    
+      hljs.initHighlighting();
+    
+    
+      progressively.init({delay: 30, throttle: 50});
+    
+    
+  };
+</script>
+
+
+</body>
+</html>
+
