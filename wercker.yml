@@ -37,6 +37,6 @@ deploy:
         packages: git ssh-client
     - keanemind/gh-pages:
         token: $GIT_TOKEN
-        domain: www.keanenguyen.com
+        #domain: www.keanenguyen.com
         basedir: public
         branch: master
